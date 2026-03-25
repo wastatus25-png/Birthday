@@ -5,72 +5,40 @@
 <title>Birthday Surprise</title>
 
 <link rel="stylesheet" href="style.css">
-
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
 
 <div class="container">
 
-  <!-- Slide 1 -->
-  <div class="slide active">
-    <h2>Someone crafted something magical for</h2>
-    <h1 class="glow">My Lovely Shizuka 💖</h1>
-    <button onclick="nextSlide()">Start</button>
-  </div>
-
-  <!-- Slide 2 -->
-  <div class="slide">
-    <h2>Our bond in three words</h2>
-    <p>Sweet, My Love & Kind Heart 💕</p>
-    <button onclick="nextSlide()">Next</button>
-  </div>
-
-  <!-- Slide 3 -->
-  <div class="slide">
-    <h1>Let's Celebrate 🎉</h1>
-    <button onclick="nextSlide()">Turn On Lights</button>
-  </div>
-
-  <!-- Slide 4 -->
-  <div class="slide">
-    <img src="images/balloon.png" class="balloon">
-    <button onclick="playMusic()">Play Music 🎵</button>
-  </div>
-
-  <!-- Slide 5 -->
-  <div class="slide">
-    <h1>You are so special 💖</h1>
-    <button onclick="nextSlide()">Next</button>
-  </div>
-
-  <!-- Slide 6 -->
-  <div class="slide">
-    <img src="images/cake_on.png" id="cake">
-    <button onclick="blow()">Blow Candles 🎂</button>
-  </div>
-
-  <!-- Slide 7 -->
-  <div class="slide">
-    <div class="letter">
-      <h2>Happy Birthday 🎉</h2>
-      <p>
-        You are My Love, 
-        I am very happy with you, 
-        and I pray to God that you
-        always being with me
-        I Love💖 You so much <br>
-        Be Happy & Keep Happy ✨
-      </p>
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <h1 class="typing">Shizuka 💖</h1>
+        <button onclick="nextSlide()">Start</button>
     </div>
-  </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <h2 class="typing">You are special for me ❤️</h2>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <h2 class="typing">Happy Birthday 🎂</h2>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <!-- Final Slide -->
+    <div class="slide">
+        <div class="final-box">
+            <h2>💖 Happy Birthday Shizuka 💖</h2>
+            <p>You are my favorite person ✨</p>
+        </div>
+    </div>
 
 </div>
 
-<audio id="music" src="music.mp3"></audio>
-
 <script src="script.js"></script>
-
 </body>
 </html>
