@@ -9,7 +9,8 @@ body {
 
     height: 100vh;
 }
-
+    color: white;
+}
 .container {
   height: 100vh;
   display: flex;
