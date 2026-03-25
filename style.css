@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+  animation: fade 1s;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg,#ff4b7d,#7b61ff);
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@keyframes fade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+.glow {
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px pink; }
+  to { text-shadow: 0 0 25px purple; }
+}
+
+.balloon {
+  width: 200px;
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-30px);}
+  100% {transform: translateY(0);}
+}
+
+#cake {
+  width: 200px;
+}
+
+.letter {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+}
