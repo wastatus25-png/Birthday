@@ -1,76 +1,73 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial;
 
-    background-image: url("./images/bg.jpg");
+    background-image: url("images/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+    color: white;  /* 🔥 FONT WHITE */
+}
+
+/* Center content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
-    color: white;
-}
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
+/* Slides */
 .slide {
-  display: none;
+    display: none;
+    text-align: center;
 }
 
-.active {
-  display: block;
-  animation: fade 1s;
+.slide.active {
+    display: block;
 }
 
+/* Button */
 button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(45deg,#ff4b7d,#7b61ff);
-  color: white;
-  margin-top: 20px;
-  cursor: pointer;
-  font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, pink, purple);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-@keyframes fade {
-  from {opacity:0;}
-  to {opacity:1;}
+/* Typing effect */
+.typing {
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.5s infinite;
 }
 
-.glow {
-  animation: glow 1.5s infinite alternate;
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-@keyframes glow {
-  from { text-shadow: 0 0 10px pink; }
-  to { text-shadow: 0 0 25px purple; }
+@keyframes blink {
+    50% { border-color: transparent }
 }
 
-.balloon {
-  width: 200px;
-  animation: float 3s infinite;
-}
+/* FINAL BOX (Vertical Center Card) */
+.final-box {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 15px;
 
-@keyframes float {
-  0% {transform: translateY(0);}
-  50% {transform: translateY(-30px);}
-  100% {transform: translateY(0);}
-}
+    display: flex;
+    flex-direction: column;  /* 🔥 vertical */
+    align-items: center;
+    justify-content: center;
 
-#cake {
-  width: 200px;
-}
-
-.letter {
-  background: white;
-  color: black;
-  padding: 20px;
-  border-radius: 15px;
+    width: 250px;
 }
